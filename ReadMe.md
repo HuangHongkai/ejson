@@ -94,6 +94,36 @@
          }}
      };
      ```
+     这种方法有时候还是有点不够直观，所以我弄了一个宏，使得编写json时更加直观
+
+     ```cpp
+     JSONObject context = OBJECT(
+                 KEYVALUE("username", "hhk"),
+                 KEYVALUE("obj", OBJECT(
+                         KEYVALUE("abcd", LIST(1,2.3, "hahahaha")),
+                         KEYVALUE("obj", OBJECT(
+                                 KEYVALUE("key", "this is obj.obj.key' s value")
+                         ))
+                 )),
+                 KEYVALUE("null", nullptr),
+                 KEYVALUE("list", LIST(1, "qwerty", 2.34, OBJECT(
+                                 KEYVALUE("key", "this is a key"),
+                                 KEYVALUE("key2", "this is a key2"),
+                         ))),
+                 KEYVALUE("list1", LIST(1,2,3,4,5)),
+                 KEYVALUE("list2", LIST(1,2,3)),
+                 KEYVALUE("obj2", OBJECT(
+                         KEYVALUE("key1", "value1"),
+                         KEYVALUE("key2", 222),
+                         KEYVALUE("key3", 333),
+                 )),
+                 KEYVALUE("a", "111"),
+                 KEYVALUE("b", "222"),
+                 KEYVALUE("c", "333"),
+         );
+     ```
+
+     这里有三个宏，分别是OBJECT，KEYVALUE， LIST。
 
    - 支持链式add的操作
 
