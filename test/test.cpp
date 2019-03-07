@@ -2,8 +2,8 @@
 // Created by hhk on 18-12-17.
 //
 #include <bits/stdc++.h>
-#include "simple_json.h"
-
+#include "../include/simple_json.h"
+#pragma comment(lib, "libSimpleJson.a")
 
 using std::cout;
 using std::cin;
@@ -68,7 +68,7 @@ void test_json() {
         cout << obj << endl;
         cout << JSONObject(map_any) << endl; // map做构照函数
         cout << "格式化输出" << endl;
-        cout << obj.toString(4) << endl;
+        cout << obj.toString(0) << endl;
         cout << endl << endl;
     }
 
@@ -115,4 +115,9 @@ void test_json() {
         free(b);
         cout << endl << endl;
     }
+}
+
+int main()
+{
+    test_json();
 }
