@@ -53,7 +53,7 @@
    - toString方法转换为字符串，toString可选参数，代表缩进的数量。
 
      例如 `test1.toString(4)` 表示4空格缩进
-2. ‘’**JSON Object**
+2. **JSON Object**
 
    - 使用 [] 来写入数据
 
@@ -127,7 +127,7 @@
 
 ![1551942038488](./pic/pic4.png)
 
-​	    无空格缩进(   ` obj.toString(0)`)
+​		无空格缩进(   ` obj.toString(0)`)
 
 ![1551942154905](./pic/pic5.png)
 
@@ -135,7 +135,7 @@
 
    由于我们不知道字符串是array还是object，我们使用JSONBase类来接受返回的结果。
 
-   （JSONBase中有isJSONArray 和 isJSONArray 方法，可以方便我们进行类型转换）
+   （JSONBase中有isJSONArray 和 isJSONArray 方法，可以方便我们进行类型判断）
 
    例如以下,
 
