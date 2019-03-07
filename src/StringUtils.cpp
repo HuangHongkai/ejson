@@ -40,10 +40,12 @@ namespace SimpleJson {
     }
 
     double str2double(const string& str) {
+        // TODO str2double
         return 0;
     }
 
     int str2int(const string& str) {
+        // TODO str2int
         return 0;
     }
 }
