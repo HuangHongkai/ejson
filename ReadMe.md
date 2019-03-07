@@ -123,11 +123,13 @@
 
      ![1551941891253](./pic/pic3.png)
 
+     
+
      无缩进（`obj.toString(-1)`）
 
-![1551942038488](./pic/pic4.png)
+     ![1551942038488](./pic/pic4.png)
 
-​		无空格缩进(   ` obj.toString(0)`)
+     无空格缩进(   ` obj.toString(0)`)
 
 ![1551942154905](./pic/pic5.png)
 
