@@ -1,3 +1,52 @@
+### 介绍
+该库为轻量级的c++ json解析与构造库，源码很短，适合学习。
+
+提供了的功能：
+
+- json字符串解析为c++对象（JSONArray和JSONObject）
+- c++对象中获取key-value值
+- c++对象转化为json字符串
+
+除此之外，由于json支持了多种数据类型，还可以将JSONArray对象看成是python的list，JSONObject看成是python的dict，库中提供了方便操作的api函数。例如以下初始化方法，
+
+```cpp
+JSONArray arr = {123.4, "dfsdf", 23, nullptr}; // 类似于python的list
+JSONArray arr2 = LIST(1.23, "sdfsdg", 234, nullptr); //提供一个LIST初始化宏，类似于python的list
+JSONObject obj = {
+    {"test obj", {"key", "value"}},
+    {"int number", 2},
+    {"float number", 34.3},
+    {"my string", "fsdfsdg"},
+    {"nullptr", nullptr},
+    {"emptylist", {}},
+}; // 可以看成是python的dict
+JSONObject obj2 = OBJECT(
+            KEYVALUE("username", "hhk"),
+            KEYVALUE("obj", OBJECT(
+                    KEYVALUE("abcd", LIST(1,2.3, "hahahaha")),
+                    KEYVALUE("obj", OBJECT(
+                            KEYVALUE("key", "this is obj.obj.key' s value")
+                    ))
+            )),
+            KEYVALUE("null", nullptr),
+            KEYVALUE("list", LIST(1, "qwerty", 2.34, OBJECT(
+                            KEYVALUE("key", "this is a key"),
+                            KEYVALUE("key2", "this is a key2"),
+                    ))),
+    		);  // 提供了一个初始化宏，类似于python的dict
+// 注：使用OBJECT LIST初始化宏的目的是为了替代{}来进行初始化，因为有时候大括号看起来会不够直观。
+```
+
+实现该库的一些技巧：
+
+- 参考boost any.hpp ，实现一个可以在容器里容纳任意类型的对象
+
+- typeid 进行类型的判断
+
+- 使用了很多递归方法
+
+  
+
 ### 编译
 编译依赖：
 - cmake
