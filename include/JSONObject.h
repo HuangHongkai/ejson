@@ -10,7 +10,7 @@
 #include "JSONArray.h"
 #include "StringUtils.h"
 
-namespace SimpleJson {
+namespace EasyJson {
     using std::map;
     using std::initializer_list;
     using std::vector;

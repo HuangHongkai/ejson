@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 #include <utility>
 
-namespace SimpleJson {
+namespace EasyJson {
     using std::exception;
     using std::string;
     using std::cerr;

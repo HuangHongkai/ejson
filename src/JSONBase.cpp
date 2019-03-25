@@ -7,8 +7,7 @@
 #include "JSONObject.h"
 
 
-namespace SimpleJson {
-
+namespace EasyJson {
     bool JSONBase::output_field(ostream &os, const any &rhs) {
 #define CHECKTYPE(target_type) \
     if (rhs.type().hash_code() == typeid(target_type).hash_code()) { \
@@ -36,7 +35,7 @@ namespace SimpleJson {
         JSONArray &arr = *arr_ptr;
         string tmp;
         if (!checkJson(str) && str[0] == '[')
-            throwException(JSONParseException, "not simple_json arr");
+            throwException(JSONParseException, "not ejson arr");
         while (i < len) {
             if (str[i] == ' ' || str[i] == '\r' || str[i] == '\n') {
                 i++;
@@ -116,7 +115,7 @@ namespace SimpleJson {
         size_t len = str.length();
         string tmp, key, value;
         if (!checkJson(str) && str[0] == '{')
-            throwException(JSONParseException, "not simple_json");
+            throwException(JSONParseException, "not ejson");
         while (i < len) {
             if (str[i] == ' ' || str[i] == '\n' || str[i] == '\r') {
                 i++;

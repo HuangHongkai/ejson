@@ -8,7 +8,7 @@
 #include "StringUtils.h"
 #include "JSONException.hpp"
 
-namespace SimpleJson {
+namespace EasyJson {
     using std::ostream;
     using std::string;
     using std::initializer_list;
@@ -46,7 +46,7 @@ namespace SimpleJson {
             OBJECT,
         } type = UNKNOWN;
 
-        bool isJSONArray() { return type == ARRAY; }
+        bool EasyJson() { return type == ARRAY; }
 
         bool isJSONOBject() { return type == OBJECT; }
 

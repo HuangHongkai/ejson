@@ -2,13 +2,13 @@
 // Created by hhk on 18-12-17.
 //
 #include <bits/stdc++.h>
-#include "../include/simple_json.h"
-#pragma comment(lib, "libSimpleJson.a")
+#include "ejson.h"
+#pragma comment(lib, "libejson.a")
 
 using std::cout;
 using std::cin;
 using std::endl;
-using namespace SimpleJson;
+using namespace EasyJson;
 
 class AAAA{ };
 void test_json() {

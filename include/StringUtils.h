@@ -7,7 +7,7 @@
 
 #include <bits/stdc++.h>
 
-namespace SimpleJson {
+namespace EasyJson {
     using std::string;
     using std::ios_base;
     using std::ptr_fun;

@@ -5,7 +5,7 @@
 #include "JSONObject.h"
 #include "JSONArray.h"
 
-namespace SimpleJson {
+namespace EasyJson {
     string JSONArray::__toString(int indent, size_t to_indent) {
         stringstream ss;
         string s;

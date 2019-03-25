@@ -15,10 +15,10 @@
 #define LIST(...) {__VA_ARGS__}
 #define OBJECT(...) {__VA_ARGS__}
 
-static std::ostream &operator<<(std::ostream &os, SimpleJson::any &rhs) {
+static std::ostream &operator<<(std::ostream &os, EasyJson::any &rhs) {
 #define CHECKTYPE(target_type) \
     if (rhs.type().hash_code() == typeid(target_type).hash_code()) { \
-        os << SimpleJson::any_cast<target_type>(rhs); \
+        os << EasyJson::any_cast<target_type>(rhs); \
         return os; \
     }
 
@@ -26,8 +26,8 @@ static std::ostream &operator<<(std::ostream &os, SimpleJson::any &rhs) {
     CHECKTYPE(float);
     CHECKTYPE(double);
     CHECKTYPE(std::string);
-    CHECKTYPE(SimpleJson::JSONArray);
-    CHECKTYPE(SimpleJson::JSONObject);
+    CHECKTYPE(EasyJson::JSONArray);
+    CHECKTYPE(EasyJson::JSONObject);
     CHECKTYPE(char*);
     CHECKTYPE(const char*);
     if (rhs.type().hash_code() == typeid(nullptr).hash_code())

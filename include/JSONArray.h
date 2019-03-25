@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 #include "JSONBase.h"
 
-namespace SimpleJson {
+namespace EasyJson {
     using std::stringstream;
     using std::vector;
     using std::initializer_list;

@@ -4,7 +4,7 @@
 
 #include "StringUtils.h"
 
-namespace SimpleJson {
+namespace EasyJson {
     string& trim_left(string &str)  {
         string::iterator p = find_if(str.begin(), str.end(), not1(ptr_fun<int, int>(isspace)));
         str.erase(str.begin(), p);

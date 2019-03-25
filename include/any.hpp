@@ -2,7 +2,7 @@
 #define SIMPLE_JSON_ANY_HPP
 #include <bits/stdc++.h>
 
-namespace SimpleJson {
+namespace EasyJson {
     /**
      * 支持任意 c++ 类型
      */
