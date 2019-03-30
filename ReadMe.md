@@ -54,11 +54,15 @@ JSONObject obj2 = OBJECT(
 
 如果是windows平台可以使用MinGW或Cygwin或msys64的gcc来编译，配合clion，开发起来挺方便的。
 
-例如windows平台下（linux下类似），编译静态库的方法如下，编译成功后在build目录下生成libejson.a静态库。
+例如windows平台下（linux下类似），编译静态库的方法如下，编译成功后在build目录下生成libejson.a静态库和ejson_test.exe可执行文件(linux下平台生成的可执行文件没有.exe)。
 
 ![](./pic/pic1.jpg)
 
-编译测试程序方法如下：(-lejson参数表示链接libejson.a静态库)
+运行测试程序：
+
+![1553961192371](./pic/1553961192371.png)
+
+手动编译测试程序方法如下：(-lejson参数表示链接libejson.a静态库， -I参数为增加include的搜索目录)
 
 ![](./pic/pic2.jpg)
 
