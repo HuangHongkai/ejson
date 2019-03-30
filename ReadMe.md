@@ -70,7 +70,7 @@ JSONObject obj2 = OBJECT(
 
 ### 提供方便的API
 
-这里Json支持的类型有int, float, double, const char* , string,  nullptr(cpp中的空指针)
+这里json支持的类型有int, float, double, const char* , string,  nullptr(cpp中的空指针)，同时支持json的嵌套。
 
 1. **JSON Array**
 
