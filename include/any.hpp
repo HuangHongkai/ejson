@@ -1,5 +1,5 @@
-#ifndef SIMPLE_JSON_ANY_HPP
-#define SIMPLE_JSON_ANY_HPP
+#ifndef EASY_JSON_ANY_HPP
+#define EASY_JSON_ANY_HPP
 #include <bits/stdc++.h>
 
 namespace EasyJson {
@@ -179,4 +179,4 @@ namespace EasyJson {
         };
 }
 
-#endif // SIMPLE_JSON_ANY_HPP
+#endif // EASY_JSON_ANY_HPP

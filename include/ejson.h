@@ -2,8 +2,8 @@
 // Created by hhk on 18-12-17.
 //
 
-#ifndef SIMPLE_JSON_H
-#define SIMPLE_JSON_H
+#ifndef EASY_JSON_H
+#define EASY_JSON_H
 
 #include "any.hpp"
 #include "JSONBase.h"
@@ -41,4 +41,4 @@ static std::ostream &operator<<(std::ostream &os, EasyJson::any &rhs) {
 #undef CHECKTYPE
 }
 
-#endif //SIMPLE_JSON_H
+#endif //EASY_JSON_H

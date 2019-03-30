@@ -2,8 +2,8 @@
 // Created by hhk on 18-12-17.
 //
 
-#ifndef JSONOBJECT_HPP
-#define JSONOBJECT_HPP
+#ifndef JSONOBJECT_H
+#define JSONOBJECT_H
 
 #include <bits/stdc++.h>
 #include "JSONBase.h"

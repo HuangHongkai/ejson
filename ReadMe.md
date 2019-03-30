@@ -52,7 +52,7 @@ JSONObject obj2 = OBJECT(
 - cmake
 - gcc
 
-如果是windows平台推荐使用cygwin套件（可以在windows下编译linux软件），配合clion，开发起来挺方便的。
+如果是windows平台可以使用MinGW或Cygwin或msys64的gcc来编译，配合clion，开发起来挺方便的。
 
 例如windows平台下（linux下类似），编译静态库的方法如下，编译成功后在build目录下生成libejson.a静态库。
 

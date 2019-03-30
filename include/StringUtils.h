@@ -2,8 +2,8 @@
 // Created by hhk on 18-12-13.
 //
 
-#ifndef SIMPLE_JSON_STRUTILS_H
-#define SIMPLE_JSON_STRUTILS_H
+#ifndef EASY_JSON_STRUTILS_H
+#define EASY_JSON_STRUTILS_H
 
 #include <bits/stdc++.h>
 
@@ -27,4 +27,4 @@ namespace EasyJson {
     string &replace_str(const string &str, const string& old_str, const string& new_str, size_t limit = 0x7fffffff);
 
 }
-#endif //SIMPLE_JSON_STRUTILS_H
+#endif //EASY_JSON_STRUTILS_H
